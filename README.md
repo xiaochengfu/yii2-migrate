@@ -1,6 +1,6 @@
 database migration
 ==================
-yii2 database migration
+yii2 database migration ,it is easy!
 
 Installation
 ------------
