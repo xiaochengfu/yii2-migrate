@@ -1,0 +1,21 @@
+{
+    "name": "xiaochengfu/yii2-migrate",
+    "description": "yii2 database migration",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "houpeng",
+            "email": "xcf-hp@Foxmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "xiaochengfu\\migrate\\": ""
+        }
+    }
+}
