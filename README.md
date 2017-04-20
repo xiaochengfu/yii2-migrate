@@ -27,11 +27,12 @@ Usage
 
 Once the extension is installed, simply use it in your code by  :
 
-```
+
 网页端使用:
 
 1.在 backend/config/main.php 添加如下配置
 
+```
 'modules' => [
         'migration' => [
             'class' => 'xiaochengfu\migrate\Module',
@@ -61,6 +62,6 @@ Once the extension is installed, simply use it in your code by  :
 `php yii migrate/dump`
 
 3.还原指定文件
+
 `php yii migrate/to m170420_151515_migration.php`
 
-```
