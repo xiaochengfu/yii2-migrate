@@ -4,7 +4,7 @@
     "type": "yii2-extension",
     "keywords": ["yii2","extension"],
     "license": "BSD-3-Clause",
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "support": {
         "issues": "https://github.com/xiaochengfu/yii2-migrate/issues",
         "source": "https://github.com/xiaochengfu/yii2-migrate"
@@ -18,7 +18,7 @@
     ],
     "require": {
         "php": ">=5.4.0",
-        "yiisoft/yii2": ">=2.0.6"
+        "yiisoft/yii2": "*"
     },
     "autoload": {
         "psr-4": {

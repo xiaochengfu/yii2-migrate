@@ -1,5 +1,5 @@
 <?php
-namespace migration;
+namespace xiaochengfu\migrate;
 
 class Module extends \yii\base\Module
 {

@@ -27,5 +27,40 @@ Usage
 
 Once the extension is installed, simply use it in your code by  :
 
-```php
-<?= \xiaochengfu\migrate\AutoloadExample::widget(); ?>```
+```
+网页端使用:
+
+1.在 backend/config/main.php 添加如下配置
+
+'modules' => [
+        'migration' => [
+            'class' => 'xiaochengfu\migrate\Module',
+        ]
+    ],
+```
+2.在你的后台访问 http://yourdomain/migration
+
+演示地址： http://yii.phpsy.cn/migration
+
+
+
+命令行使用方法:
+
+1.在`console/config/main.php` 添加如下配置
+```
+'controllerMap' => [
+        'migrate' => [
+                    'class' => 'xiaochengfu\migrate\console\MigrateController',
+                    'useTablePrefix' => true,
+                    'migrationPath' => '@console/migrations',
+                ],
+    ],
+```
+
+2.将迁移文件转存,及备份
+`php yii migrate/dump`
+
+3.还原指定文件
+`php yii migrate/to m170420_151515_migration.php`
+
+```
