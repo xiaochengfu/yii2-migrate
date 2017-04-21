@@ -9,7 +9,7 @@ namespace xiaochengfu\migrate\assets;
 
 class MigrationAsset extends  \yii\web\AssetBundle
 {
-    public $sourcePath = '@backend/modules/migration/static';
+    public $sourcePath = '@vendor/xiaochengfu/yii2-migrate/static';
     public $css = [
         'migration.css',
     ];
