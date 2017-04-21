@@ -56,7 +56,7 @@ class MigrateController extends \yii\console\controllers\MigrateController
             $name = 'm' . gmdate('ymd_His') . '_' . $model->migrationName;
             $file = $path . DIRECTORY_SEPARATOR . $name . '.php';
 
-            $content = $this->renderFile(Yii::getAlias("@backend/modules/migration/views/migration.php"), [
+            $content = $this->renderFile(Yii::getAlias("@vendor/xiaochengfu/yii2-migrate/views/migration.php"), [
                 'className' => $name,
                 'up' => $upStr->output(),
                 'down' => $downStr->output()
